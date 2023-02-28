@@ -1,0 +1,47 @@
+/*HEADER*/
+header {
+    flex-direction: row;
+    margin: none;
+}
+.profile-photo {
+    display: inline-block;
+    margin: 30px;
+    width: 40%;
+}
+.profile-user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.name {
+    margin-bottom: 30px;
+}
+.profession {
+    margin-bottom: 0;
+}
+.description {
+    padding: 0px 20px;
+}
+/*REDES Y PORTAFOLIOS*/
+.redes-portafolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes-portafolio__list li {
+    width: 25%;
+    margin-bottom: 50px;
+}
+
+.redes-portafolio__list div:hover {
+    height: 140px;
+}
+.datos-personales__list p {
+    font-size: 1.4em;
+}
+.datos-personales__list span {
+    font-size: 1.1em;
+}

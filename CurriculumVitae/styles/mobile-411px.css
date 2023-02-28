@@ -1,0 +1,11 @@
+/*REDES Y PORTAFOLIOS*/
+.redes-portafolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes-portafolio__list li {
+    width: 40%;
+    margin-bottom: 50px;
+}

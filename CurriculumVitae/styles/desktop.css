@@ -1,0 +1,184 @@
+/*BODY*/
+.container {
+    position: relative;
+    display: flex;   
+    flex-direction: row-reverse;
+    width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+
+}
+body {
+    background: var(--white);
+}
+/*DISEÑOS ESPECIALES*/
+.compressed-list li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(49, 118, 224, 0.5);
+    text-align: center;
+    padding-bottom: 15px;
+}
+.compressed-list  p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*HEADER*/
+
+header{
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 270px);
+}
+.profile-photo {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin: 0px;
+    top: 10px;
+    left: -285px;
+    margin-left: calc(150px - 110px);
+    z-index: 20;
+    
+}
+.profile-user-container {
+    background: var(--soft-blue);
+    height: 120px;
+    width: 100vw;
+    margin-top: 60px;
+    z-index: 10;
+
+}
+.name {
+    width: 100%;
+    color:var(--black);
+}
+.profession {
+    color:var(--black);
+
+}
+.description {
+    color: var(--black);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.description:before {
+    content:"Sobre mí";
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 1px solid var(--soft-blue);
+}
+
+/*MAIN*/
+main {
+    margin-top: 400px;
+}
+/*IDIOMAS*/
+.idiomas__list span {
+    width: 100%;
+}
+
+.hobbies {
+    top: 1056px;
+    width: 37%;
+    position: absolute;
+}
+
+.idiomas {
+    position: absolute;
+    top: 1299px;
+    width: 38%;
+}
+/*FOOTER*/
+footer {
+    position: relative;
+    z-index: 0;
+    width: 270px;
+    margin: 0;
+    padding: 200px 0px 10px 0px;
+    flex-direction: column;
+}
+.subtitle.footer-subtitle {
+    font-size: 1.2em;
+}
+.datos-personales, .redes-portafolio {
+    width: 100%;
+}
+.redes-portafolio__list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.datos-personales__list li p, .datos-personales__list li span{
+    font-size: 1em;
+}
+.redes-portafolio__list a {
+    display: inline-block;
+    width: 30px;
+    margin-right: 10px;
+}
+.redes-portafolio__list a:hover {
+    opacity: 80%;
+}
+.redes-portafolio__list a::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    color: white;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+.redes-portafolio__list li {
+    height: 30px;
+}
+.redes-portafolio__list div {
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: left;
+}
+.redes-portafolio__list div:hover {
+    height: 100%;
+}
+.redes-portafolio__list span{
+    display: none;
+}
+/*::After de cada una de las redes*/
+.redes-portafolio__list .github {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.redes-portafolio__list .github::after {
+    content: "Github";
+}
+.redes-portafolio__list .linkedin::after {
+    content: "Linkedin"
+}
+.redes-portafolio__list .instagram::after {
+    content: "Instagram"
+}
+.redes-portafolio__list .platzi::after {
+    content: "Platzi"
+}
+.footer__leyenda {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 1078px;
+    justify-content:flex-end;
+    padding: 0;
+}
